@@ -126,4 +126,5 @@ flycheck_*.el
 config.h
 *.rej
 *.orig
-st
+dmenu
+stest
