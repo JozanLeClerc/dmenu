@@ -1,0 +1,50 @@
+#+TITLE: dmenu - dynamic menu  for X
+
+* Introduction
+This is my personnal build of *[[https://tools.suckless.org/dmenu/][dmenu]]*,
+a simple dynamic menu for X which sucks less. I've applied some patches.
+
+* Depedencies
+- A C compiler
+- ~xorg~
+- ~make~
+
+* Installation
+To install this build, run these commands:
+
+#+BEGIN_SRC shell
+$ git clone git://jozanleclerc.xyz/jozan/dmenu.git
+$ cd dmenu
+$ make
+# make install clean
+#+END_SRC
+
+It is installed by default in the user ~/usr/local/bin~ directory but you can
+change it to something that matches more your ~$PATH~ by editing the ~PREFIX~
+variable in ~config.mk~.
+
+* Applied patches
+You can find a list of patches and check what those I've applied are
+doing on *dmenu*'s [[https://tools.suckless.org/dmenu/patches/][patches]] page.
+
+Here is my list:
+- /border/
+- /case insensitive/
+- /center/
+- /fuzzyhighlight/
+- /fuzzymatch/
+- /line height/
+
+* Settings
+Most settings are done by editing ~config.h~ and recompiling. All settings
+can also be configured via command line options, see ~man 1 dmenu~ for more
+informations.
+
+** Fonts
+The default font is part of the
+[[https://github.com/ryanoasis/nerd-fonts][Nerd Fonts]] collection but can
+be changed in ~config.h:11~.
+
+** Colors
+The colorscheme used in this build is ~gruvbox dark hard~, you can change it
+at ~config.h:16~.

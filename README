@@ -1,24 +1,56 @@
-dmenu - dynamic menu
-====================
-dmenu is an efficient dynamic menu for X.
+dmenu - dynamic menu  for X
+===========================
 
-
-Requirements
+Introduction
 ------------
-In order to build dmenu you need the Xlib header files.
+This is my personnal build of dmenu, a simple dynamic menu for
+X which sucks less. I've applied some patches.
 
+Depedencies
+-----------
+- A C compiler
+- xorg
+- make
 
 Installation
 ------------
-Edit config.mk to match your local setup (dmenu is installed into
-the /usr/local namespace by default).
+To install this build, run these commands:
 
-Afterwards enter the following command to build and install dmenu
-(if necessary as root):
+  $ git clone git://jozanleclerc.xyz/jozan/dmenu.git
+  $ cd dmenu
+  $ make
+  # make install clean
 
-    make clean install
+It is installed by default in the user /usr/local/bin directory but you can
+change it to something that matches more your $PATH by editing the PREFIX
+variable in config.mk.
 
+Applied patches
+---------------
+You can find a list of patches and check what those I've applied are
+doing on dmenu's patches page.
 
-Running dmenu
--------------
-See the man page for details.
+Here is my list:
+  - border
+  - case insensitive
+  - center
+  - fuzzyhighlight
+  - fuzzymatch
+  - line height
+
+Settings
+--------
+Most settings are done by editing config.h and recompiling. All settings
+can also be configured via command line options, see
+  $ man 1 dmenu
+for more informations.
+
+ Fonts
+ -----
+ The default font is part of the Nerd Fonts collection but can
+ be changed at config.h:11.
+ 
+ Colors
+ ------
+ The colorscheme used in this build is gruvbox dark hard, you can
+ change it at config.h:16.
