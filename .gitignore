@@ -127,3 +127,4 @@ flycheck_*.el
 *.orig
 dmenu
 stest
+.ccls-cache
