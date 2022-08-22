@@ -9,7 +9,7 @@ static int min_width = 500;                    /* minimum width when centered */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
 	/* "mononoki Nerd Font:size=14" */
-	"Mx437 AT&T PC6300:size=17"
+	"AcPlus IBM VGA 8x14:size=20"
 };
 static const char *prompt      = NULL;	/* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
