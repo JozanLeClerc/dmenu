@@ -8,14 +8,15 @@ static int centered = 1;                    /* -c option; centers dmenu on scree
 static int min_width = 500;                    /* minimum width when centered */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"mononoki Nerd Font:size=14"
+	/* "mononoki Nerd Font:size=14" */
+	"Mx437 AT&T PC6300:size=17"
 };
 static const char *prompt      = NULL;	/* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
 	[SchemeNorm] = { "#ebdbb2", "#1d2021" },
-	[SchemeSel] = { "#ebdbb2", "#990000" },
-	[SchemeSelHighlight] = { "#fabd2f", "#990000" },
+	[SchemeSel] = { "#ebdbb2", "#6e0000" },
+	[SchemeSelHighlight] = { "#fabd2f", "#6e0000" },
 	[SchemeNormHighlight] = { "#fabd2f", "#1d2021" },
 	[SchemeOut] = { "#000000", "#00ffff" },
 };
