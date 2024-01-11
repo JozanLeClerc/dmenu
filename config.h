@@ -8,16 +8,16 @@ static int centered = 1;                    /* -c option; centers dmenu on scree
 static int min_width = 500;                    /* minimum width when centered */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"UbuntuMono Nerd Font:size=15"
+	"NotoSansMono Nerd Font:size=15"
 };
 static const char *prompt      = NULL;	/* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
 	[SchemeNorm] = { "#ebdbb2", "#1d2021" },
-	[SchemeSel] = { "#ebdbb2", "#6e0000" },
-	[SchemeSelHighlight] = { "#fabd2f", "#6e0000" },
+	[SchemeSel] = { "#ebdbb2", "#9d0006" },
+	[SchemeSelHighlight] = { "#fabd2f", "#9d0006" },
 	[SchemeNormHighlight] = { "#fabd2f", "#1d2021" },
-	[SchemeOut] = { "#000000", "#00ffff" },
+	[SchemeOut] = { "#000000", "#9d0006" },
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 5;
