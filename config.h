@@ -8,7 +8,7 @@ static int centered = 1;                    /* -c option; centers dmenu on scree
 static int min_width = 500;                    /* minimum width when centered */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"Terminess Nerd Font:style=Bold:size=15"
+	"Terminess Nerd Font:style=Bold:size=16"
 	// "UbuntuMono Nerd Font:size=15"
 };
 static const char *prompt      = NULL;	/* -p  option; prompt to the left of input field */
