@@ -25,9 +25,9 @@ LIBS = -L$(X11LIB) -lX11 $(XINERAMALIBS) $(FREETYPELIBS) -lm
 
 # flags
 CPPFLAGS = -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700 -D_POSIX_C_SOURCE=200809L -DVERSION=\"$(VERSION)\" $(XINERAMAFLAGS)
-CFLAGS   = -std=c99 -pedantic -Wall -Os -march=alderlake -pipe $(INCS) $(CPPFLAGS)
+CFLAGS   = -std=c99 -pedantic -Wall -Os -march=lunarlake -pipe $(INCS) $(CPPFLAGS)
 ifeq (${HOSTNAME}, mother)
-CFLAGS   = -std=c99 -pedantic -Wall -Os -march=haswell -pipe $(INCS) $(CPPFLAGS)
+CFLAGS   = -std=c99 -pedantic -Wall -Os -march=raptorlake -pipe $(INCS) $(CPPFLAGS)
 endif
 LDFLAGS  = $(LIBS)
 
