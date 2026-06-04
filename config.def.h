@@ -8,7 +8,7 @@ static const char *fonts[] = {
 	// "MonaspiceNe Nerd Font:style=Medium:size=12"
 	// "BlexMono Nerd Font:style=Medium:size=13"
 	// "Terminess Nerd Font:size=15"
-	"Terminus (TTF):size=15"
+	"Terminus (TTF):size=13"
 	// "BigBlueTermPlus Nerd Font:size=13"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
