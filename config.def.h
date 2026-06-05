@@ -7,7 +7,8 @@ static int fuzzy  = 1;                      /* -F  option; if 0, dmenu doesn't u
 static const char *fonts[] = {
 	// "MonaspiceNe Nerd Font:style=Medium:size=12"
 	// "BlexMono Nerd Font:style=Medium:size=13"
-	"EnvyCodeR Nerd Font:size=14"
+	// "EnvyCodeR Nerd Font:size=14"
+	"Mononoki Nerd Font:size=14"
 	// "Terminess Nerd Font:size=15"
 	// "Terminus (TTF):size=13"
 
